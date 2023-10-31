@@ -1,0 +1,9 @@
+<h1>Checkout</h1>
+
+<ul>
+{% for item in items %}
+    <li>{{ item.name }} - {{ item.price }}</li>
+{% endfor %}
+</ul>
+
+<a href="{{ url_for('confirm_purchase') }}">Confirm Purchase</a>
